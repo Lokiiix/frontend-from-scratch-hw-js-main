@@ -19,22 +19,14 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 
 function findCommonElements(array1, array2) {
   const result = [];
-
-  // Перебираем первый массив
   for (let i = 0; i < array1.length; i++) {
     const element = array1[i];
-
-    // Проверяем, есть ли элемент во втором массиве
     if (includesElement(array2, element)) {
-      // И проверяем, нет ли его уже в результирующем массиве
       if (!includesElement(result, element)) {
         result.push(element);
       }
     }
   }
-
   return result;
 }
-
-console.log(findCommonElements([1, 2, 5, 4], [1, 2, 3, 4, 5])); 
-// Ожидаемый вывод: [1, 2, 3, 4]
+console.log(findCommonElements([12, 23, 54, 45], [1, 2, 3, 4, 5])); 
