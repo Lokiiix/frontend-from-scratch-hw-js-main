@@ -35,4 +35,17 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(galleryObj, artwork, newValue) {
+	galleryObj[artwork] = newValue;
+}
+
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506');
+updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali');
+
+console.log(gallery);
+// {
+//   'Mona Lisa': 'Leonardo da Vinci, 1503-1506',
+//   'Starry Night': 'Vincent van Gogh',
+//   'The Scream': 'Edvard Munch',
+//   'The Persistence of Memory': 'Salvador Dali'
+// }

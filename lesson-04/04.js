@@ -12,4 +12,8 @@
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
 
-function doubleEachCharacter() {}
+function doubleEachCharacter(str) {
+  return str.split('').map(c => c + c).join('');
+}
+console.log(doubleEachCharacter('hello'));
+
