@@ -16,3 +16,9 @@ const hasTemporaryPass = false
 let isAccess
 
 // your code
+const user = true
+
+while {
+	if (user = isAdmin) || (user = isVerifiedUser);
+	console.log(isAccess + "Доступ разрешен");
+}
