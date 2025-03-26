@@ -16,13 +16,13 @@
 */
 
 function findUniqueElements(array) {
-    const result = [];
-    for (const element of array) {
-        if (!includesElement(result, element)) {
-            result.push(element);
-        }
-    }
-    return result;
+	const result = [];
+	for (let i = 0; i < array.length; i++) {
+		const element = array[i];
+		if (!includesElement(result, element)) {
+			result.push(element);
+		}
+	}
+	return result;
 }
-
-console.log(findUniqueElements([1, 2, 3, 2, 1, 4])); // [1, 2, 3, 4]
+console.log(findUniqueElements([1, 2, 3, 4, 4]));
