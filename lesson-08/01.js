@@ -68,3 +68,6 @@ clearCartButton.addEventListener('click', function () {
 })
 
 // Твой код:
+cart.addEventListener('click', function () {
+
+})
