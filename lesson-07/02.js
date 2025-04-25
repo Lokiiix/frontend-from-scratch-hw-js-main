@@ -8,7 +8,7 @@ function isNumeric(str) {
 }
 
 // console.log(isNumeric("123")) // Ожидаемый результат: true
-// console.log(isNumeric("12.e3")) // Ожидаемый результат: true
-// console.log(isNumeric('1.23e4')) // Ожидаемый результат: true
+// console.log(isNumeric("12.3")) // Ожидаемый результат: true
+// console.log(isNumeric("123abc")) // Ожидаемый результат: false
 // console.log(isNumeric("abc")) // Ожидаемый результат: false
 // console.log(isNumeric(" ")) // Ожидаемый результат: false
